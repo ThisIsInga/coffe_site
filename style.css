@@ -1,0 +1,205 @@
+/* .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  } */
+  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgba(0, 0, 0, 1);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.recipe {
+    display: flex;
+}
+
+.recipe_left{
+    position: relative;
+}
+
+.recipe_left img{
+    width: 648px;
+    height: 1107px;
+}
+
+.recipe_left_title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    width: 296px;
+    height: 65px;
+    font-size: 15px;
+    padding: 18px;
+    position: absolute;
+    bottom: 50px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.recipe_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recipe_right_main {
+    margin: 109px;
+    text-align: left;
+    width: 744px;
+    height: 144px;
+    position: absolute;
+    left: 400px;
+    top: -40px;
+    background-color: white;
+    padding: 20px 48px 20px 55px;
+}
+
+.recipe_right_main h2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 57.6px;
+    font-size: 48px;
+}
+
+.main_reviews{
+    display: flex;
+}
+
+.main_reviews p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.recipe_right_blocks {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe_right_blocks h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.recipe_right_blocks p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 164, 27, 1);
+}
+
+.blocks_time{
+    position: relative;
+}
+
+.blocks_time::before{
+    content: url('./img/icons/blocks/timer.svg');
+    position: absolute;
+    left: -40px;
+}
+
+.blocks_complexity{
+    position: relative;
+}
+
+.blocks_complexity::before{
+    content: url('./img/icons/blocks/level.svg');
+    position: absolute;
+    left: -40px;
+}
+
+.blocks_cost{
+    position: relative;
+}
+
+.blocks_cost::before{
+    content: url('./img/icons/blocks/wallet.svg');
+    position: absolute;
+    left: -40px;
+}
+
+.recipe_right_italic{
+    margin-top: 31px;
+    margin-left: 80px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    width: 712px;
+}
+
+.recipe_right_description {
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.recipe_right_description h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.recipe_right_description ul{
+    margin-top: 20px;
+}
+
+.recipe_right_description li{
+    margin-top: 14px;
+    margin-left: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.recipe_right_description li:first-child::before {
+    content: url('./img/icons/description/check-box.svg');
+    position: absolute;
+    left: -30px;
+}
+
+.recipe_right_description li:nth-last-child(-n+3)::before {
+    content: url('./img/icons/description/check-box-outline.svg');
+    position: absolute;
+    left: -30px;
+}
+
+
+.recipe_right_cooking {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.recipe_right_cooking h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.recipe_right_cooking li{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-left: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
